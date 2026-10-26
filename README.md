@@ -71,6 +71,11 @@ LIMIT 10;
 ```
 Result: 
 <img width="408" height="280" alt="image" src="https://github.com/user-attachments/assets/b344a620-12c4-4c40-8a03-26ad8497ba20" />
+## Key Insights
+-TV Shows Reach a Higher Rating Ceiling: Television shows achieve significantly higher peak ratings than movies. The highest-rated show, #ABtalks, holds a 9.6 IMDB score, followed by Breaking Bad and Khawatir at 9.5. In contrast, the top-rated movies, Chhota Bheem & Krishna vs Zimbara and Major, peak at 9.1. In fact, seven of the top ten television shows score higher than the number one ranked movie.
+-Movies Have a Lower Rating Floor: The lowest extremes of the dataset belong to movies. The absolute lowest-rated title is the movie Aerials with a score of 1.5, and three movies fall entirely below the 2.0 mark. The lowest-rated television shows, Thomas & Friends: All Engines Go! and He's Expecting, bottom out slightly higher at an even 2.0.
+-Reality TV & Influencer Content Struggles: The bottom 10 shows list is heavily populated by reality television, docuseries, and influencer-centric programming. Titles like Hype House (2.1), The Goop Lab (2.5), and Byron Baes (2.6) indicate that this specific format consistently receives poor reception from IMDB users compared to narrative television.
+-Global Diversity Drives the Top Charts: The highest-rated titles are not dominated by Hollywood, reflecting a highly international viewer base. The top 10 movies feature a prominent mix of Indian cinema and animation (Major, C/o Kancharapalem, Anbe Sivam) alongside classic American blockbusters like Forrest Gump (8.8), Inception (8.8), and GoodFellas (8.7). Similarly, the top 10 shows feature Middle Eastern programs (#ABtalks, Khawatir), premium documentaries (Our Planet, The Last Dance), and acclaimed Korean dramas like Reply 1988 (9.2) and My Mister (9.1).
 
 ## 2. What were the average IMDB and TMDB scores for shows and movies? 
 ```SQLite
