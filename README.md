@@ -2,7 +2,7 @@
 
 ## Overview
 This project analyzes a dataset of Netflix movies and television shows to extract insights on IMDB/TMDB ratings, genre popularity, and release decades using DB Browser for SQLite. 
-The raw dataset file (`titles.csv`) used for this analysis are uploaded in this repository for reference.
+The raw dataset file ([titles.csv](titles.csv) used for this analysis are uploaded in this repository for reference.
 ## Skills Applied
 - Relational Database Management
 - Complex SQL Queries (JOINs, GROUP BY, Aggregate Functions)
