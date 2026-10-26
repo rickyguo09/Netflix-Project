@@ -1,4 +1,3 @@
-# Netflix-Project
 # Netflix Content Analysis using SQL & Excel
 
 ## Overview
