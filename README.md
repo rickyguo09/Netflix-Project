@@ -20,3 +20,12 @@ This project analyzes a dataset of Netflix movies and television shows to extrac
 ## 1. Which movies and shows on Netflix ranked in the top 10 and bottom 10 based on their IMDB scores?
 - Top 10 Movies
 ```SQLite
+SELECT title, 
+type, 
+imdb_score
+FROM titles
+WHERE imdb_score >= 8.0
+AND type = 'MOVIE'
+ORDER BY imdb_score DESC
+LIMIT 10;
+```
