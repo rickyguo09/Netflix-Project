@@ -71,7 +71,8 @@ LIMIT 10;
 ```
 Result: 
 <img width="408" height="280" alt="image" src="https://github.com/user-attachments/assets/b344a620-12c4-4c40-8a03-26ad8497ba20" />
-## Key Insights
+
+## Data Analysis
 -TV Shows Reach a Higher Rating Ceiling: Television shows achieve significantly higher peak ratings than movies. The highest-rated show, #ABtalks, holds a 9.6 IMDB score, followed by Breaking Bad and Khawatir at 9.5. In contrast, the top-rated movies, Chhota Bheem & Krishna vs Zimbara and Major, peak at 9.1. In fact, seven of the top ten television shows score higher than the number one ranked movie.
 
 -Movies Have a Lower Rating Floor: The lowest extremes of the dataset belong to movies. The absolute lowest-rated title is the movie Aerials with a score of 1.5, and three movies fall entirely below the 2.0 mark. The lowest-rated television shows, Thomas & Friends: All Engines Go! and He's Expecting, bottom out slightly higher at an even 2.0.
@@ -91,6 +92,9 @@ GROUP BY type;
 Result: 
 <img width="267" height="74" alt="image" src="https://github.com/user-attachments/assets/4fcfffe2-4cea-42f4-90f6-0274df527887" />
 
+## Data Analysis
+-Audiences consistently rate television shows higher than movies across both major review platforms. Shows maintain a nearly 7.0 average on IMDB (6.98) and a 7.48 on TMDB, whereas movies lag behind at 6.25 and 6.46, respectively. This gap suggests viewers find more satisfying narrative engagement or perceived quality in serialized content compared to the platform's standalone feature films.
+
 ## 3. How many movies and shows fall in each decade in Netflix's library?
 ```SQLite
 SELECT CONCAT(FLOOR(release_year / 10) * 10, 's') AS decade,
@@ -103,7 +107,10 @@ ORDER BY decade;
 Result: 
 <img width="192" height="262" alt="image" src="https://github.com/user-attachments/assets/d143662c-d926-4c0f-ae95-a47476c19118" />
 
-## 4. What were the average IMDB and TMDB scores for each age certification
+## Data Analysis
+- The catalog's composition heavily favors modern content, reflecting a massive shift in acquisition and production strategy during the streaming boom. Content from the 1990s (121 titles) and earlier makes up a negligible fraction of the library. The volume explodes in the 2010s with 3,304 titles—nearly nine times the volume of the 2000s (369 titles)—and remains heavily weighted toward recent releases in the 2020s (1,972 titles).
+
+## 4. What were the average IMDB and TMDB scores for each age certification?
 ```SQLite
 SELECT DISTINCT age_certification, 
 ROUND(AVG(imdb_score),2) AS avg_imdb_score,
@@ -114,6 +121,9 @@ ORDER BY avg_imdb_score DESC;
 ```
 Result: 
 <img width="333" height="338" alt="image" src="https://github.com/user-attachments/assets/fe9eef79-e762-4f87-8963-f66752e9ce58" />
+
+## Data Analysis
+- Television-specific ratings dominate the highest tiers of audience reception. 'TV-14' (7.22 IMDB) and 'TV-MA' (7.02 IMDB) are the highest-rated categories overall, while traditional cinematic ratings like 'PG-13' (6.43 IMDB) and 'R' (6.29 IMDB) sit significantly lower down the list. Interestingly, children's programming ('TV-Y') scores highest of all on TMDB (7.88) despite a modest IMDB score (6.55), highlighting a divergence in how different review communities evaluate youth content.
 
 ## 5. What were the 5 most common age certifications for movies?
 ```SQLite
@@ -128,5 +138,8 @@ LIMIT 5;
 ```
 Result:
 <img width="240" height="165" alt="image" src="https://github.com/user-attachments/assets/e55cd454-ac72-4b32-bbb1-02dfd6b3f1be" />
+
+## Data Analysis
+- The platform's movie catalog is overwhelmingly tailored to mature and teenage audiences rather than young families. 'R' rated films are the most abundant at 556 titles, followed closely by 'PG-13' at 451 titles. In contrast, family-friendly 'G' rated movies represent a relatively small portion of the library with only 124 titles, indicating that Netflix likely relies on other formats—like animation or TV shows—to serve its youngest demographics.
 
 
