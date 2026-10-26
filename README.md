@@ -11,6 +11,7 @@ The dataset can also be found here: (https://www.kaggle.com/datasets/victorsoeir
 
 
 Business Problem: Netflix’s content strategy team needs to understand historical viewer satisfaction to guide future production investments. However, evaluating decades of release data and thousands of titles is inefficient in raw flat files. They require a structured data analysis solution to uncover actionable trends surrounding high-performing genres, optimal content formats, and audience rating patterns across different age certifications and eras.
+
 How I Solved the Problem: I constructed a relational database environment using DB Browser for SQLite to ingest and query the extensive movies and shows dataset. By authoring complex SQL queries leveraging JOIN statements, GROUP BY clauses, and aggregate functions, I extracted definitive metrics on IMDB/TMDB scores, content volume by decade, and top-rated directors. This approach transformed raw CSV files into clear, actionable insights that enable stakeholders to easily identify peak content trends and rating disparities between movies and television shows.
   ## Questions I Wanted To Answer From the Dataset:
 
